@@ -1,0 +1,8 @@
+.box{
+	border: 1px solid #dddddd;
+	float: left;
+	width: 30%;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
