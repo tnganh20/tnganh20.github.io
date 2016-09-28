@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+}
+#main-menu {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#main-menu a{
+	color: #737373;
+	font-size: 18px;
+	text-decoration: none;
+    padding: 14px 16px;
+}
+.dog{
+	float: left;
+	border: 1px solid #dddddd;
+	width: 33.333%;
+}
+#img {
+	max-width: 100%;
+}
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+h3{
+	text-align: center;
+}
+.dog:hover img{
+	border-radius: 50%;
+}
