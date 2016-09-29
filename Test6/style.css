@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+#main-menu {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+#main-menu a{
+	color: #808080;
+	font-size: 20px;
+	text-decoration: none;
+    padding: 14px 16px;
+}
+.dog{
+	float: left;
+	border: 1px solid #dddddd;
+	width: 33.333%;
+}
+#img {
+	max-width: 100%;
+}
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+h3{
+	text-align: center;
+	opacity: 1;
+	animation: fadeout 5s ease infinite;
+}
+.dog:hover img{
+	border-radius: 50%;
+}
+#backtotop{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	animation: fadein 2s ease infinite;
+}
+#footer{
+	animation: moved 5s ease infinite;
+}
+@keyframes moved{
+	50%{transform: translate(1300px,0);}
+}
+@keyframes fadein{
+	0%{opacity: 0;}
+	25%{opacity: 0.25;}
+	50%{opacity: 0.5;}
+	75%{opacity: 0.75;}
+	100%{opacity: 1;}
+}
+@keyframes fadeout{
+	0%{opacity: 1;}
+	25%{opacity: 0.75;}
+	50%{opacity: 0.5;}
+	75%{opacity: 0.25;}
+	100%{opacity: 0;}
+}
