@@ -1,0 +1,31 @@
+*{
+	box-sizing: border-box;
+}
+#wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+.food{
+	float: left;
+	border: 1px solid #dddddd;
+	width: 33.33%;
+}
+h3{
+	text-align: center;
+}
+#menu > li{
+	float: left;
+	width: 33.33%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 20px;
+	list-style-type: none;
+	text-align: left;
+}
+#menu > li > ul {
+    list-style-type: none;
+    display: none;
+}
+#menu > li:hover > ul {
+    display: block;
+}
