@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	 <meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<input type="text" id="kq"></br>
+		<button onclick="n('7')">7</button>
+		<button onclick="n('8')">8</button>
+		<button onclick="n('9')">9</button>
+		<button onclick="n('+')">+</button>
+		<button onclick="n('4')">4</button>
+		<button onclick="n('5')">5</button>
+		<button onclick="n('6')">6</button>
+		<button onclick="n('-')">-</button>
+		<button onclick="n('1')">1</button>
+		<button onclick="n('2')">2</button>
+		<button onclick="n('3')">3</button>
+		<button onclick="n('*')">x</button>
+		<button onclick="reset()">AC</button>
+		<button onclick="n('0')">0</button>
+		<button onclick="n('.')">.</button>
+		<button onclick="n('/')">/</button>
+		<button onclick="cb2()">√</button>
+		<button onclick="bp()">a^2</button>
+		<button onclick="gt()">!</button>
+		<button onclick="bang()">=</button>
+
+		<script type="text/javascript">
+			function n(x){
+				document.getElementById("kq").value+=x;
+
+			}
+			function reset(){
+				document.getElementById("kq").value = null;
+			}
+			function bang(){
+				var x = document.getElementById("kq").value;
+				document.getElementById("kq").value=eval(x);
+			}
+			function cb2(){
+				var x=parseFloat(document.getElementById("kq").value);
+				if(x>=0){
+				document.getElementById("kq").value=Math.sqrt(x);
+			}
+				else{
+				document.getElementById("kq").value="SYNTAX ERROR";
+				}
+			}
+			function bp(){
+				var x=parseFloat(document.getElementById("kq").value);
+				document.getElementById("kq").value=x*x;
+			}
+			function gt(){
+				var x=parseFloat(document.getElementById("kq").value);
+				if(x==0||x==1){
+					document.getElementById("kq").value="1";
+				}
+				else if(x<0){
+					document.getElementById("kq").value="SYNTAX ERROR";
+				}
+				else{
+					var i=1;
+					var kq;
+					for(var j=2;j<=x;j++){
+						i=i*j;
+					}
+					document.getElementById("kq").value=i;
+				}
+			}
+		</script>
+</body>
+</html>

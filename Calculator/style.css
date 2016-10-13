@@ -1,0 +1,12 @@
+*{
+	max-width: 600px;
+	margin: auto;
+	padding-top: 20px;
+}
+input{
+	width: 99.4%;
+}
+button{
+	float: left;
+	width: 25%;
+}
