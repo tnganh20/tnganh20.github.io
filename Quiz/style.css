@@ -1,0 +1,14 @@
+*{
+	background-image: url(http://i.imgur.com/jpYRr4i.jpg);
+	color: white;
+}
+.a{
+	margin: 7px;
+}
+.a:hover { 
+    color: gray;
+}
+#btn{
+	text-align: center;
+	vertical-align: middle;
+}

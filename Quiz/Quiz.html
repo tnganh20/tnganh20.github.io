@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="c1">
+		<h3 id="q1">Giải Grand Slam đầu tiên trong năm là giải nào?</h3>
+		<div class="a" id="a11" onclick="ans(0,'a11')">Australia Open</div>
+		<div class="a" id="a12" onclick="ans(0,'a12')">Wimbledon</div>
+		<div class="a" id="a13" onclick="ans(0,'a13')">Roland Garos</div>
+		<div class="a" id="a14" onclick="ans(0,'a14')">US Open</div>
+	</div>
+	<div id="c2">
+		<h3 id="q2">Trong các cây cầu sau, cầu nào là cầu xoay?</h3>
+		<div class="a" id="a21" onclick="ans(1,'a21')">Cầu Thanh Trì</div>
+		<div class="a" id="a22" onclick="ans(1,'a22')">Cầu Thị Nại</div>
+		<div class="a" id="a23" onclick="ans(1,'a23')">Cầu Sông hàn</div>
+		<div class="a" id="a24" onclick="ans(1,'a24')">Cầu Cần Thơ</div>
+	</div>
+	<div id="c3">
+		<h3 id="q3">Đại Ngu là quốc hiệu của triều đại nào?</h3>
+		<div class="a" id="a31" onclick="ans(2,'a31')">Ngô</div>
+		<div class="a" id="a32" onclick="ans(2,'a32')">Hồ</div>
+		<div class="a" id="a33" onclick="ans(2,'a33')">Chúa Nguyễn</div>
+		<div class="a" id="a34" onclick="ans(2,'a34')">Tây Sơn</div>
+	</div>
+	<div id="c4">
+		<h3 id="q4">Câu lạc bộ nào vô địch FIFA Club World Cup 2010 tổ chức tại Qatar?</h3>
+		<div class="a" id="a41" onclick="ans(3,'a41')">Inter Milan</div>
+		<div class="a" id="a42" onclick="ans(3,'a42')">Real Madrid</div>
+		<div class="a" id="a43" onclick="ans(3,'a43')">Bayern Munich</div>
+		<div class="a" id="a44" onclick="ans(3,'a44')">Manchester United</div>
+	</div>
+	<div id="c5">
+		<h3 id="q5">Loại vitamin nào cơ thể có thể tự tổng hợp được nhờ ánh sáng mặt trời?</h3>
+		<div class="a" id="a51" onclick="ans(4,'a51')">A</div>
+		<div class="a" id="a52" onclick="ans(4,'a52')">D</div>
+		<div class="a" id="a53" onclick="ans(4,'a53')">E</div>
+		<div class="a" id="a54" onclick="ans(4,'a54')">K</div>
+	</div>
+	<div id="c6">
+		<h3 id="q6">Paracetamol thuộc nhóm thuốc nào sau đây?</h3>
+		<div class="a" id="a61" onclick="ans(5,'a61')">Thuốc lợi tiểu</div>
+		<div class="a" id="a62" onclick="ans(5,'a62')">Thuốc điều trị tăng huyết áp</div>
+		<div class="a" id="a63" onclick="ans(5,'a63')">Thuốc an thần, bình thân</div>
+		<div class="a" id="a64" onclick="ans(5,'a64')">Thuốc hạ sốt, giảm đau, chống viêm</div>
+	</div>
+	<div id="c7">
+		<h3 id="q7">Nhà thơ nào là người Việt Nam đầu tiên nhận giải thưởng văn học Đông Nam Á vào năm 1996?</h3>
+		<div class="a" id="a71" onclick="ans(6,'a71')">Tố Hữu</div>
+		<div class="a" id="a72" onclick="ans(6,'a72')">Nguyễn Đình Thi</div>
+		<div class="a" id="a73" onclick="ans(6,'a73')">Nguyễn Khoa Điềm</div>
+		<div class="a" id="a74" onclick="ans(6,'a74')">Huy Cận</div>
+	</div>
+	<div id="btn"><button onclick="cf()">Confirm</button></div>
+	<script type="text/javascript">
+		var cau1={
+			q:document.getElementById("q1").innerText,
+			a:"Australia Open"
+		};
+		var cau2={
+			q:document.getElementById("q2").innerText,
+			a:"Cầu Sông hàn"
+		};
+		var cau3={
+			q:document.getElementById("q3").innerText,
+			a:"Hồ"
+		};
+		var cau4={
+			q:document.getElementById("q4").innerText,
+			a:"Inter Milan"
+		};
+		var cau5={
+			q:document.getElementById("q5").innerText,
+			a:"D"
+		};
+		var cau6={
+			q:document.getElementById("q6").innerText,
+			a:"Thuốc hạ sốt, giảm đau, chống viêm"
+		};
+		var cau7={
+			q:document.getElementById("q7").innerText,
+			a:"Tố Hữu"
+		};
+		var arr=[cau1,cau2,cau3,cau4,cau5,cau6,cau7];
+		var count=0;
+		function ans(n,id){
+			var img1 = document.createElement("img");
+			img1.src = "http://i.imgur.com/8stA8Ja.png";
+			img1.setAttribute("height", "15");
+			img1.setAttribute("width", "15");
+			var img2 = document.createElement("img");
+			img2.src = "http://i.imgur.com/8ADOp5I.png";
+			img2.setAttribute("height", "15");
+			img2.setAttribute("width", "15");
+			var s = document.getElementById(id).innerText;
+			if(s!=arr[n].a){
+				document.getElementById(id).appendChild(img2);
+			}
+			else{
+				document.getElementById(id).appendChild(img1);
+				count++;
+			}
+		}
+		function cf(){
+			if(count==7){
+				window.location.href="Success.html";
+			}
+			else{
+				window.location.href="Quiz.html";
+			}
+		}
+
+	</script>
+</body>
+</html>
