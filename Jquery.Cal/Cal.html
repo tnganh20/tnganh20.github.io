@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	 <meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<input type="text" id="kq"></br>
+		<button onclick="n('7')">7</button>
+		<button onclick="n('8')">8</button>
+		<button onclick="n('9')">9</button>
+		<button onclick="n('+')">+</button>
+		<button onclick="n('4')">4</button>
+		<button onclick="n('5')">5</button>
+		<button onclick="n('6')">6</button>
+		<button onclick="n('-')">-</button>
+		<button onclick="n('1')">1</button>
+		<button onclick="n('2')">2</button>
+		<button onclick="n('3')">3</button>
+		<button onclick="n('*')">x</button>
+		<button onclick="reset()">AC</button>
+		<button onclick="n('0')">0</button>
+		<button onclick="n('.')">.</button>
+		<button onclick="n('/')">/</button>
+		<button onclick="cb2()">√</button>
+		<button onclick="bp()">a^2</button>
+		<button onclick="gt()">!</button>
+		<button onclick="bang()">=</button>
+		<button id="btn" onclick="changetheme()">Change Theme</button>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			function n(x){
+				var z= $('#kq').val();
+				$('#kq').val(z+x);
+
+			}
+			function reset(){
+				$('#kq').val(null);
+			}
+			function bang(){
+				var x = $('#kq').val();
+				$('#kq').val(eval(x));0
+			}
+			function cb2(){
+				var x=parseFloat($('#kq').val());
+				if(x>=0){
+				$('#kq').val(Math.sqrt(x));
+			}
+				else{
+				$('#kq').val("SYNTAX ERROR");
+				}
+			}
+			function bp(){
+				var x=parseFloat($('#kq').val());
+				$('#kq').val(x*x);
+			}
+			function gt(){
+				var x=parseFloat($('#kq').val());
+				if(x==0||x==1){
+					$('#kq').val("1");
+				}
+				else if(x<0){
+					$('#kq').val("SYNTAX ERROR");
+				}
+				else{
+					var i=1;
+					var kq;
+					for(var j=2;j<=x;j++){
+						i=i*j;
+					}
+					$('#kq').val(i);
+				}
+			}
+			function changetheme(){
+				$('button').css("color","gray");
+				$('body').css("background-color","#6495ED")
+			}
+		</script>
+</body>
+</html>
