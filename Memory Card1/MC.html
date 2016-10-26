@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory Card</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="wrap">
+	<div class="grid">
+	<div class="content">
+	<div id="card11" class="card" onclick="rotate('11')">
+	<div id="front11" class="front">
+		<img src="http://i.imgur.com/ldcAGkJ.jpg" width="250" height="300">
+	</div>
+	<div id="back11" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card12" class="card" onclick="rotate('12')">
+	<div id="front12" class="front">
+		<img src="http://i.imgur.com/ldcAGkJ.jpg" width="250" height="300">
+	</div>
+	<div id="back12" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card21" class="card" onclick="rotate('21')">
+	<div id="front21" class="front">
+		<img src="http://i.imgur.com/f7H70i6.jpg" width="250" height="300">
+	</div>
+	<div id="back21" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card22" class="card" onclick="rotate('22')">
+	<div id="front22" class="front">
+		<img src="http://i.imgur.com/f7H70i6.jpg" width="250" height="300">
+	</div>
+	<div id="back22" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card31" class="card" onclick="rotate('31')">
+	<div id="front31" class="front">
+		<img src="http://i.imgur.com/s96yExZ.jpg" width="250" height="300">
+	</div>
+	<div id="back31" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card32" class="card" onclick="rotate('32')">
+	<div id="front32" class="front">
+		<img src="http://i.imgur.com/s96yExZ.jpg" width="250" height="300">
+	</div>
+	<div id="back32" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card41" class="card" onclick="rotate('41')">
+	<div id="front41" class="front">
+		<img src="http://i.imgur.com/uSBR2Su.jpg" width="250" height="300">
+	</div>
+	<div id="back41" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card42" class="card" onclick="rotate('42')">
+	<div id="front42" class="front">
+		<img src="http://i.imgur.com/uSBR2Su.jpg" width="250" height="300">
+	</div>
+	<div id="back42" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card51" class="card" onclick="rotate('51')">
+	<div id="front51" class="front" >
+		<img src="http://i.imgur.com/IhQBP9F.jpg" width="250" height="300">
+	</div>
+	<div id="back51" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card52" class="card" onclick="rotate('52')">
+	<div id="front52" class="front">
+		<img src="http://i.imgur.com/IhQBP9F.jpg" width="250" height="300">
+	</div>
+	<div id="back52" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card61" class="card" onclick="rotate('61')">
+	<div id="front61" class="front">
+		<img src="http://i.imgur.com/oHXsW50.jpg" width="250" height="300">
+	</div>
+	<div id="back61" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	<div id="card62" class="card" onclick="rotate('62')">
+	<div id="front62" class="front">
+		<img src="http://i.imgur.com/oHXsW50.jpg" width="250" height="300">
+	</div>
+	<div id="back62" class="back">
+		<img src="http://i.imgur.com/lEEWqZg.jpg" width="250" height="300">
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var a1=['http://i.imgur.com/ldcAGkJ.jpg','http://i.imgur.com/f7H70i6.jpg','http://i.imgur.com/s96yExZ.jpg','http://i.imgur.com/uSBR2Su.jpg','http://i.imgur.com/IhQBP9F.jpg','http://i.imgur.com/oHXsW50.jpg'];
+		var a2=['#front11 img','#front12 img','#front21 img','#front22 img','#front31 img','#front32 img','#front41 img',
+		'#front42 img','#front51 img','#front52 img','#front61 img','#front62 img'];
+		$('.content').on("onload", shuffle(a1,a2));
+		function rotate(s){
+			$('#back'+s+'').css("transform","rotateY(180deg)");
+			$('#front'+s+'').css("transform","rotateY(0deg)");
+			$('#back'+s+'').css("transition","all 0.5s");
+			$('#front'+s+'').css("transition","all 0.5s");
+			$('#back'+s+'').css("backface-visibility","hidden");
+			$('#front'+s+'').css("backface-visibility","hidden");
+		}
+		function shuffle(array1,array2) {
+  		var currentIndex1 = array1.length, temporaryValue1, randomIndex1;
+    	while (0 !== currentIndex1) {
+        randomIndex1 = Math.floor(Math.random() * currentIndex1);
+        currentIndex1 -= 1;
+        temporaryValue1 = array1[currentIndex1];
+        array1[currentIndex1] = array1[randomIndex1];
+        array1[randomIndex1] = temporaryValue1;
+  }
+  		var currentIndex2 = array2.length, temporaryValue2, randomIndex2;
+    	while (0 !== currentIndex2) {
+        randomIndex2 = Math.floor(Math.random() * currentIndex2);
+        currentIndex2 -= 1;
+        temporaryValue2 = array2[currentIndex2];
+        array2[currentIndex2] = array2[randomIndex2];
+        array2[randomIndex2] = temporaryValue2;
+  }
+			$(array2[0]).attr('src',array1[0]);
+			$(array2[1]).attr('src',array1[3]);
+			$(array2[2]).attr('src',array1[1]);
+			$(array2[3]).attr('src',array1[2]);
+			$(array2[4]).attr('src',array1[5]);
+			$(array2[5]).attr('src',array1[0]);
+			$(array2[6]).attr('src',array1[3]);
+			$(array2[7]).attr('src',array1[4]);
+			$(array2[8]).attr('src',array1[1]);
+			$(array2[9]).attr('src',array1[4]);
+			$(array2[10]).attr('src',array1[5]);
+			$(array2[11]).attr('src',array1[2]);
+}
+	</script>
+</body>
+</html>
