@@ -2,10 +2,46 @@
 	background-image: url(http://i.imgur.com/jpYRr4i.jpg);
 	color: white;
 }
-.a{
+.a0{
 	margin: 7px;
 }
-.a:hover { 
+.a0:hover { 
+    color: gray;
+}
+.a1{
+	margin: 7px;
+}
+.a1:hover { 
+    color: gray;
+}
+.a2{
+	margin: 7px;
+}
+.a2:hover { 
+    color: gray;
+}
+.a3{
+	margin: 7px;
+}
+.a3:hover { 
+    color: gray;
+}
+.a4{
+	margin: 7px;
+}
+.a4:hover { 
+    color: gray;
+}
+.a5{
+	margin: 7px;
+}
+.a5:hover { 
+    color: gray;
+}
+.a6{
+	margin: 7px;
+}
+.a6:hover { 
     color: gray;
 }
 #btn{
