@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Đăng ký thành công</h1>
+	<p id="name"></p>
+	<p id="email"></p>
+	<p id="phonenum"></p>
+	<p id="address"></p>
+	<p id="gender"></p>
+	<p id="doB"></p>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var s=decodeURIComponent(window.location.href);
+		var name= s.slice(s.indexOf("name=")+5,s.indexOf("&email"));
+		document.getElementById("name").innerHTML ="Họ và tên: "+name;
+		var email= s.slice(s.indexOf("email=")+6,s.indexOf("&password"));
+		document.getElementById("email").innerHTML="Email: "+email;
+		var phonenum= s.slice(s.indexOf("phonenum=")+9,s.indexOf("&address"));
+		document.getElementById("phonenum").innerHTML="Số điện thoại: "+phonenum;
+		var address= s.slice(s.indexOf("address=")+8,s.indexOf("&gender"));
+		document.getElementById("address").innerHTML="Địa chỉ: "+address;
+		var gender= s.slice(s.indexOf("gender=")+7,s.indexOf("&date"));
+		document.getElementById("gender").innerHTML="Giới tính: "+gender;
+		var date = s.slice(s.indexOf("date=")+5,s.indexOf("&month"));
+		var month= s.slice(s.indexOf("month=")+6,s.indexOf("&year"));
+		var year = s.slice(s.indexOf("year=")+5,s.indexOf("&confirm"));
+		document.getElementById("doB").innerHTML="Ngày sinh: "+date+"-"+month+"-"+year+""
+	</script>
+</body>
+</html>
