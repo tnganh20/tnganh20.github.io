@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng ký</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+	<form action="result.html" id="form-register">
+		<input type="text" name="name" placeholder="Họ tên" id="name" class="txt" />
+		<span class="error"></span><br/>
+		<input type="text" name="email" placeholder="Email" id="email" class="txt" />
+		<span class="error"></span><br/>
+		<input type="password" name="password" placeholder="Mật khẩu" id="password" class="txt" />
+		<span class="error"></span><br/>
+		<input type="text" name="phonenum" placeholder="Số điện thoại" id="phonenum" class="txt" />
+		<span class="error"></span><br/>
+		<input type="text" name="address" placeholder="Địa chỉ" id="address" class="txt" />
+		<span class="error"></span><br/>
+		<input type="radio" name="gender" id="male" value="Nam" /><label for="male">Nam</label>
+		<input type="radio" name="gender" id="female" value="Nữ" /><label for="female">Nữ</label>
+		<span class="error" id="rad"></span><br/>
+		<select name="date" id="date">
+		<option>Chọn ngày sinh</option>
+		<option>1</option>	<option>2</option>
+		<option>3</option>	<option>4</option>
+		<option>5</option>	<option>6</option>
+		<option>7</option>	<option>8</option>
+		<option>9</option>	<option>10</option>
+		<option>11</option>	<option>12</option>
+		<option>13</option>	<option>14</option>
+		<option>15</option>	<option>16</option>
+		<option>17</option>	<option>18</option>
+		<option>19</option>	<option>20</option>
+		<option>21</option>	<option>22</option>
+		<option>23</option>	<option>24</option>
+		<option>25</option>	<option>26</option>
+		<option>27</option>	<option>28</option>
+		<option>29</option>	<option>30</option>
+		<option>31</option>
+		</select>
+		<select name="month" id="month">
+		<option>Chọn tháng sinh</option>
+		<option>1</option>	<option>2</option>
+		<option>3</option>	<option>4</option>
+		<option>5</option>	<option>6</option>
+		<option>7</option>	<option>8</option>
+		<option>9</option>	<option>10</option>
+		<option>11</option>	<option>12</option>
+		</select>
+		<select name="year" id="year">
+		<option>Chọn năm sinh</option>
+		<option>1988</option>	<option>1989</option>
+		<option>1990</option>	<option>1991</option>
+		<option>1992</option>	<option>1993</option>
+		<option>1994</option>	<option>1995</option>
+		<option>1996</option>	<option>1997</option>
+		<option>1998</option>	<option>1999</option>
+		<option>2000</option>	<option>2001</option>
+		<option>2002</option>	<option>2003</option>
+		<option>2004</option>	<option>2005</option>
+		<option>2006</option>	<option>2007</option>
+		<option>2008</option>	<option>2009</option>
+		</select>
+		<span class="error" id="rad1"></span><br/>
+		<input type="submit" name="confirm" value="Xác nhận">
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('#form-register').on('submit', function(){
+			var isvalid=true;
+			if($('#name').val().trim()==''){
+				$('#name').next('span').text("Chưa nhập tên");
+				isvalid=false;
+			}
+			else if($('#name').val().match(/[A-Z]/)==null){
+				$('#name').next('span').text("Tên không hợp lệ");
+				isvalid=false;
+			}
+			else{
+				$('#name').next('span').text("");
+			}
+			if($('#email').val().match(/^[A-Z0-9._-]+@[A-Z0-9.-]+\.[A-Z0-9.-]+$/i)==null){
+				$('#email').next('span').text("Email không hợp lệ");
+				isvalid=false;
+			}
+			else{
+				$('#email').next('span').text("");
+			}
+			if($('#password').val().trim()==''){
+				$('#password').next('span').text("Chưa nhập Mật khẩu");
+				isvalid=false;
+			}
+			else{
+				$('#password').next('span').text("");
+			}
+			if($('#phonenum').val().trim()==''){
+				$('#phonenum').next('span').text("Chưa nhập số điện thoại");
+				isvalid=false;
+			}
+			else if($('#phonenum').val().match(/[0-9]/)==null){
+				$('#phonenum').next('span').text("Số điện thoại không hợp lệ");
+				isvalid=false;
+			}
+			else{
+				$('#phonenum').next('span').text("");
+			}
+			if($('#address').val().trim()==''){
+				$('#address').next('span').text("Chưa nhập địa chỉ");
+				isvalid=false;
+			}
+			else{
+				$('#address').next('span').text("");
+			}
+			if(!$('#male').is(":checked")&&!$('#female').is(":checked")){
+				$('#rad').text("Chưa chọn giới tính");
+				isvalid=false;
+			}
+			else{
+				$('#rad').text("");
+			}
+			if($('#date').val()=='Chọn ngày sinh'||$('#month').val()=='Chọn năm sinh'||$('#year').val()=='Chọn năm sinh'){
+				$('#rad1').text("Chưa chọn ngày/tháng/năm sinh");
+			}
+			else{
+				$('#rad1').text('');
+			}
+			
+			return isvalid;
+		});
+	</script>
+</body>
+</html>
