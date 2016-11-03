@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Danh sách sản phẩm</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>DANH SÁCH SẢN PHẨM</h1>
+	<table class="tablesorter">
+		<thead>
+			<tr>
+				<th>Mã sản phẩm</th>
+				<th>Tên sản phẩm</th>
+				<th>Ảnh</th>
+				<th>Giá tiền</th>
+				<th>Số lượng</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td id="ma1">A001</td>
+				<td>Chihuahua</td>
+				<td><img src="http://i.imgur.com/y64T60e.jpg" title="Chihuahua" alt="Chihuahua" width="100" height="100"></td>
+				<td>5.000.000</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td id="ma2">E054</td>
+				<td>Dachshund</td>
+				<td><img src="http://i.imgur.com/hRfv4FC.jpg" title="Dachshund" alt="Dachshund" width="100" height="100"></td>
+				<td>7.000.000</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td id="ma3">T454</td>
+				<td>Dalmatian</td>
+				<td><img src="http://i.imgur.com/BEAScQy.jpg" title="Dalmatian" alt="Dalmatian" width="100" height="100"></td>
+				<td>4.000.000</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td id="ma4">B052</td>
+				<td>Dobberman</td>
+				<td><img src="http://i.imgur.com/0Lg2Yfv.jpg" title="Dobberman" alt="Dobberman" width="100" height="100"></td>
+				<td>9.000.000</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td id="ma5">G722</td>
+				<td>Fox Terier</td>
+				<td><img src="http://i.imgur.com/Fkwd9Zr.jpg" title="fox-terrier" alt="fox-terrier" width="100" height="100"></td>
+				<td>11.000.000</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td id="ma6">C579</td>
+				<td>Golden Retriever</td>
+				<td><img src="http://i.imgur.com/Kq9vckf.jpg" title="golden-retriever" alt="golden-retriever" width="100" height="100"></td>
+				<td>15.000.000</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td id="ma7">Y988</td>
+				<td>Pekingese</td>
+				<td><img src="http://i.imgur.com/36RhINM.jpg" title="pekingese" alt="pekingese" width="100" height="100"></td>
+				<td>16.000.000</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td id="ma8">D682</td>
+				<td>Pitbull</td>
+				<td><img src="http://i.imgur.com/O3w8fNk.jpg" title="pitbull" alt="pitbull" width="100" height="100"></td>
+				<td>8.000.000</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td id="ma9">Q551</td>
+				<td>Pug</td>
+				<td><img src="http://i.imgur.com/w1fdRAa.jpg" title="pug" alt="pug" width="100" height="100"></td>
+				<td>7.000.000</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td id="ma10">A523</td>
+				<td>Poodle</td>
+				<td><img src="http://i.imgur.com/GNQlzPo.jpg" title="poodle" alt="poodle" width="100" height="100"></td>
+				<td>12.000.000</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td id="ma11">T232</td>
+				<td>Alaska</td>
+				<td><img src="http://i.imgur.com/RRcCZEd.jpg" title="alaska" alt="alaska" width="100" height="100"></td>
+				<td>20.000.000</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td id="ma12">A741</td>
+				<td>Corgi</td>
+				<td><img src="http://i.imgur.com/brwnjNr.jpg" title="Corgi" alt="Corgi" width="100" height="100"></td>
+				<td>30.000.000</td>
+				<td>2</td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="jquery.tablesorter.min.js"></script>
+	<script src="jquery.tablesorter.widgets.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		$('table').tablesorter({
+			widgets        : ['zebra', 'columns'],
+			usNumberFormat : false,
+			sortReset      : true,
+			sortRestart    : true
+		});
+	});
+	</script>
+</body>
+</html>
