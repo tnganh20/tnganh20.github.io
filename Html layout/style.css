@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+	max-width: 1100px;
+}
+header{
+	background-color: gray;
+	padding: 5px;
+	margin: 5px;
+	width: 1100px;
+}
+a{
+	margin: 10px;
+	text-decoration:none;
+	color: #2F4F4F;
+}
+input{
+	float: right;
+	margin-right: 5px;
+}
+#menu{
+	background-color: #808A87;
+	float: left;
+	width: 1100px;
+}
+#menu a{
+	margin:40px;
+}
+aside{
+	float: right;
+}
+article{
+	float: left;
+}
+#footer{
+	float: left;
+	background-color: gray;
+	width: 1100px;
+	height: 50px;
+}
+#footer a{
+	margin: 120px;
+}
