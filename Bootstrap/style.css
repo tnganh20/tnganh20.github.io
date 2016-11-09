@@ -1,0 +1,40 @@
+*{
+	box-sizing: border-box;
+}
+#main-menu {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+#main-menu a{
+	color: #808080;
+	font-size: 20px;
+	text-decoration: none;
+    padding: 14px 16px;
+}
+li:hover{
+	background-color: #dddddd;
+}
+#dog {
+	height: 200;
+	width: 300;
+}
+    
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+h3{
+	text-align: center;
+}
+#backtotop{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+#footer{
+	animation: moved 5s ease infinite;
+}
+@keyframes moved{
+	50%{transform: translate(1300px,0);}
+}
