@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Kanban Board</title>
 </head>
 <body>
@@ -17,32 +19,35 @@
     <div class="row">
         <div class="col m4">
             <div class="card">
-                <h5>TO DO(4)</h5>
-                <div class="collection sorted-list">
-                    <a href="#!" class="collection-item">DO1</a>
-                    <a href="#!" class="collection-item">DO2</a>
-                    <a href="#!" class="collection-item">DO3</a>
-                    <a href="#!" class="collection-item">DO4</a>
-                </div>
+                    <ul class="collection with-header sorted-list">
+                    <li class="collection-header" id="do"><h5>TO DO(3)</h5></li>
+                    <li class="collection-item job">DO1<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></li>
+                    <li class="collection-item job">DO2<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></li>
+                    <li class="collection-item job">DO3<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></li>
+                    <li class="collection-item"><input type="text" placeholder="New job"class="secondary-content"></li>
+                </ul>
             </div>
         </div>
         <div class="col m4">
             <div class="card">
-                <h5>DOING(2)</h5>
-                <div class="collection sorted-list">
-                    <a href="#!" class="collection-item">DOING1</a>
-                    <a href="#!" class="collection-item">DOING2</a>
-                </div>
+                <ul class="collection with-header sorted-list">
+                    <li class="collection-header" id="doing"><h5>DOING(2)</h5></li>
+                    <li class="collection-item job">DOING1<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></li>
+                    <li class="collection-item job">DOING2<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></li>
+                    <li class="collection-item"><input type="text" placeholder="New job"class="secondary-content"></li>
+                </ul>
             </div>
         </div>
         <div class="col m4">
             <div class="card">
-                <h5>DONE(3)</h5>
-                <div class="collection sorted-list">
-                    <a href="#!" class="collection-item">DONE1</a>
-                    <a href="#!" class="collection-item">DONE2</a>
-                    <a href="#!" class="collection-item">DONE3</a>
-                </div>
+                <ul class="collection with-header sorted-list">
+                    <li class="collection-header" id="done"><h5>DONE(4)</h5></li>
+                    <li class="collection-item job">DONE1<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></li>
+                    <li class="collection-item job">DONE2<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></li>
+                    <li class="collection-item job">DONE3<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></li>
+                    <li class="collection-item job">DONE4<a href="#!" class="secondary-content"><i class="material-icons">delete</i></a></li>
+                    <li class="collection-item"><input type="text" placeholder="New job"class="secondary-content"></li>
+                </ul>
             </div>
         </div>
     </div>
