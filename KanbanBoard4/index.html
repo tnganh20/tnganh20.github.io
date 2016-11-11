@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Kanban Board</title>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Kanban Board</a>
+    </div>
+</nav>
+<section class="container">
+    <div class="row">
+        <div class="col m4">
+            <div class="card">
+                    <ul class="collection with-header sorted-list" id="todo">
+                    <li class="collection-header" id="do"><h5>TO DO(<span id="count1"></span>)</h5></li>
+                </ul>
+                <label for="do2">New Job</label>
+                <div class="input-field"><input type="text" id="do2" onkeydown="app.newjob(event,'todo',this)"></div>
+
+            </div>
+        </div>
+        <div class="col m4">
+            <div class="card">
+                <ul class="collection with-header sorted-list" id="doing1">
+                    <li class="collection-header" id="doing"><h5>DOING(<span id="count2"></span>)</h5></li>
+                </ul>
+                <label for="doing2">New Job</label>
+                <div class="input-field"><input type="text" id="doing2" onkeydown="app.newjob(event,'doing1',this)"></div>
+
+            </div>
+        </div>
+        <div class="col m4">
+            <div class="card">
+                <ul class="collection with-header sorted-list"id="done1">
+                    <li class="collection-header" id="done"><h5>DONE(<span id="count3"></span>)</h5></li>
+                </ul>
+                <label for="done2">New Job</label>
+                <div class="input-field"><input type="text" id="done2" onkeydown="app.newjob(event,'done1',this)"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="modalconfirm" class="modal">
+    <div class="modal-content">
+        <h4>Confirm delete</h4>
+        <p>Are you sure to delete this job?</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" id="btndelete">Agree</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
