@@ -1,0 +1,23 @@
+
+#do{
+    background-color: aqua;
+}
+#doing{
+    background-color: wheat;
+}
+#done{
+    background-color: papayawhip;
+}
+.ui-state-highlight{
+    background-color: #fafafa;
+    height: calc(1.5rem + 20px);
+}
+.dragging{
+    transform: rotate(1deg);
+}
+label{
+    width: 5px;
+}
+#input-field{
+    width: 5px;
+}
