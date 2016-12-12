@@ -1,0 +1,384 @@
+<html>
+<head>
+    <title>album</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+
+        *{
+
+            box-sizing: border-box;
+            width:100%;
+
+        }
+
+        .breadcrumb{
+            color: aliceblue;
+            float: left;
+
+        }
+        .row1{
+            position:fixed;
+            z-index: 1030;
+            margin-bottom: 50px;
+        }
+        .container{
+            margin-top: 100px;
+        }
+
+
+        .bc-title{
+            color: blueviolet;
+            float:left;
+        }
+        .bc-derective{
+            color: brown;
+        }
+        .logo{
+            width: 50px;
+            float: left;
+            display: block;
+            background-color: #cc6699;
+            text-align: center;
+        }
+        .logo-text{
+            text-align: center;
+            font-family: cursive;
+            line-height: 50px;
+            color:whitesmoke;
+        }
+        .message{
+            float:left;
+            display: block;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+        .message a{
+            font-size: 18px;
+            font-weight: bold;
+            color: darkgray;
+            margin-top: 10px;
+        }
+        .notification{
+            float: left;
+            display: block;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+        .notification a{
+            font-size: 18px;
+            font-weight: bold;
+            color: darkgray;
+            margin-top: 10px;
+        }
+        .personal{
+            float: left;
+            display: block;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+        .personal a{
+            font-size: 18px;
+            font-weight: bold;
+            color: darkgray;
+
+        }
+        .user{
+            float: left;
+            display: block;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+        .me{
+            width: 30px;
+            height: 30px;
+            margin-top: 10px;
+            line-height: 50px;
+            border: 1px solid grey;
+        }
+
+        /* -- media query for user profile image -- */
+        /*@media (max-width: 767px) {
+            .user-image {
+                max-height: 400px;
+            }
+        }
+
+        </style>
+</head>
+<body>
+<div class="container-fluid" id="mw-header">
+    <div class="row1">
+        <div class="col-md-1 col-xs-1 logo">
+            <p class="logo-text">D</p>
+        </div>
+
+        <div class="col-md-7 col-xs-7">
+            <nav class="breadcrumb">
+                <p class="bc-title">Date online/Timeline</p>
+
+            </nav>
+        </div>
+
+        <div class="col-md-1 col-xs-1 message">
+            <a href="#">
+                <i class="fa fa-comment"></i>
+            </a>
+        </div>
+        <div class="col-md-1 col-xs-1 notification">
+            <a href="#">
+                <i class="fa fa-bell"></i>
+            </a>
+        </div>
+        <div class="col-md-1 col-xs-1 personal">
+            <a href="#">DuyAnh<i class="fa fa-angle-down"></i></a>
+        </div>
+        <div class="col-md-1 col-xs-1 user">
+            <a href="#">
+                <img class="me" src="me.jpg">
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row clearfix well">
+        <div class="col-md-2 column">
+            <img class="img-thumbnail" alt="140x140" src="me.jpg" />
+        </div>
+        <div class="col-md-6 column">
+            <blockquote>
+                <p>
+                    Duy
+                </p> <small>22 / M / Single / Straight <cite>HaNoi VietNam</cite></small>
+            </blockquote>
+        </div>
+        <div class="col-md-4 column">
+
+            <button class="btn btn-default btn-block" type="button">
+                Became VIP member
+            </button>
+            <button class="btn btn-default btn-block" type="button">
+                invite your friend on facebook
+            </button>
+            <button class="btn btn-default btn-block" type="button">
+                write something about us
+            </button>
+
+
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="tabbable" id="tabs-444468">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#panel-200304" data-toggle="tab">About</a>
+                    </li>
+                    <li>
+                        <a href="#panel-567649" data-toggle="tab">Most Like Photos</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="panel-200304">
+                        <div class="row clearfix">
+                            <div class="col-md-8 column">
+                                <p>
+                                    <strong>About me</strong><br/>
+                                    it's just awful to write this stuff and i hate having to sell myself or make myself seem like some amazing superhuman. i have some generic interests, im a bit shy, and i dont play games and just want be there for a girl and make her feel like the most unique and special person, so this is one of the most annoying experiences ever. i dont even know why i bother with this stuff when everyone is basically selling themselves as an idealized superman and I just want girls to know who I am and they can take or leave it.
+                                </p>
+                                <hr/>
+                                <p>
+                                    <strong>What i am doing with my life</strong><br/>
+                                    it's just awful to write this stuff and i hate having to sell myself or make myself seem like some amazing superhuman. i have some generic interests, im a bit shy, and i dont play games and just want be there for a girl and make her feel like the most unique and special person, so this is one of the most annoying experiences ever. i dont even know why i bother with this stuff when everyone is basically selling themselves as an idealized superman and I just want girls to know who I am and they can take or leave it.
+                                </p>
+                                <hr/>
+                                <p>
+                                    <strong>I am really good at ?</strong><br/>
+                                    it's just awful to write this stuff and i hate having to sell myself or make myself seem like some amazing superhuman. i have some generic interests, im a bit shy, and i dont play games and just want be there for a girl and make her feel like the most unique and special person, so this is one of the most annoying experiences ever. i dont even know why i bother with this stuff when everyone is basically selling themselves as an idealized superman and I just want girls to know who I am and they can take or leave it.
+                                </p>
+                                <hr/>
+                                <p>
+                                    <strong>The first thing you will notice about me?</strong><br/>
+                                    it's just awful to write this stuff and i hate having to sell myself or make myself seem like some amazing superhuman. i have some generic interests, im a bit shy, and i dont play games and just want be there for a girl and make her feel like the most unique and special person, so this is one of the most annoying experiences ever. i dont even know why i bother with this stuff when everyone is basically selling themselves as an idealized superman and I just want girls to know who I am and they can take or leave it.
+                                </p>
+                                <hr/>
+                                <p>
+                                    <strong>I cant live without ?</strong><br/>
+                                    My Mobile
+                                    My Car
+                                    My Dog
+                                </p>
+                                <hr/>
+                                <p class="well">
+                                    <strong>I am looking for ?</strong><br/>
+                                    someone good with heart
+                                </p>
+                            </div>
+                            <div class="col-md-4 column">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            Details
+                                        </th>
+                                        <th>
+                                            His/ Her
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            Last Online
+                                        </td>
+                                        <td>
+                                            1 hour ago
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ethinicity
+                                        </td>
+                                        <td>
+                                            White
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Height
+                                        </td>
+                                        <td>
+                                            5' 8"
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Body type
+                                        </td>
+                                        <td>
+                                            Slim
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Diet
+                                        </td>
+                                        <td>
+                                            Veg
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Smoke
+                                        </td>
+                                        <td>
+                                            No
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Drink
+                                        </td>
+                                        <td>
+                                            Occasionally
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Drugs
+                                        </td>
+                                        <td>
+                                            No
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Religion
+                                        </td>
+                                        <td>
+                                            Hindu
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Sign
+                                        </td>
+                                        <td>
+                                            Vergo
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Education
+                                        </td>
+                                        <td>
+                                            Masters
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Job
+                                        </td>
+                                        <td>
+                                            None
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Income
+                                        </td>
+                                        <td>
+                                            5 figures
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Language
+                                        </td>
+                                        <td>
+                                            <ol>
+                                                <li>English</li>
+                                                <li>Vietnamese</li>
+                                                <li>Japanese</li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="panel-567649">
+                        <div class="row clearfix">
+                            <div class="col-md-8 column">
+                                <img alt="140x140" src="me.jpg" /><img alt="140x140" src="me.jpg" /><img alt="140x140" src="me.jpg" /><img alt="140x140" src="me.jpg" />
+                            </div>
+                            <div class="col-md-4 column">
+                                <p>
+                                    Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

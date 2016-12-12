@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container-fluid" id="mw-header">
+    <div class="row">
+<div class="col-md-1 col-xs-1 logo">
+    <p class="logo-text">D</p>
+</div>
+
+        <div class="col-md-7 col-xs-7">
+            <nav class="breadcrumb">
+                <p class="bc-title">Date online/Timeline</p>
+
+            </nav>
+        </div>
+
+            <div class="col-md-1 col-xs-1 message">
+                <a href="#">
+                    <i class="fa fa-comment"></i>
+                </a>
+            </div>
+            <div class="col-md-1 col-xs-1 notification">
+                <a href="#">
+                    <i class="fa fa-bell"></i>
+                </a>
+            </div>
+            <div class="col-md-1 col-xs-1 personal">
+                <a href="#" id="tk">DuyAnh<i class="fa fa-angle-down"></i></a>
+            </div>
+            <div class="col-md-1 col-xs-1 user">
+                <a href="#">
+                    <img class="me" src="me.jpg">
+                </a>
+            </div>
+
+
+</div>
+    </div>
+
+<div  class="mw-content">
+
+    <div class="col-xs-12 col-md-1 menu">
+<ul>
+    <li class="item">
+        <a href="#" class="menu-i">
+            <i class="fa fa-home"></i>
+        </a>
+    </li>
+    <li class="item">
+        <a href="/social_network/about%20me/myprofile.html?_ijt=872ouf442qm80h3m36rcrbf4ee#" class="menu-i">
+            <i class="fa fa-user-circle"></i>
+        </a>
+
+    </li>
+    <li class="item">
+        <a href="/social_network/album/album.html?_ijt=4mancct2bjjg363e0g60uuojgv" class="menu-i">
+            <i class="fa fa-camera"></i>
+        </a>
+
+    </li>
+    <li class="item">
+        <a href="#" class="menu-i">
+            <i class="fa fa-comment"></i>
+        </a>
+
+    </li>
+    <li class="item">
+        <a href="#" class="menu-i">
+            <i class="fa fa-star"></i>
+        </a>
+
+    </li>
+    <li class="item">
+        <a href="/social_network/Personal/Editinfomation.html?_ijt=ij4cgkiathvcu4r1fjub17ketl" class="menu-i">
+            <i class="fa fa-cog"></i>
+        </a>
+
+    </li>
+</ul>
+
+    </div>
+
+    <div class="col-xs-12 col-md-10 content">
+
+<div class="Nick">
+
+</div>
+        <div class="timeline">
+     <div class="poster">
+    <div class="p-usericon">
+        <img class="im" src="me.jpg" height="1024"width="768">
+    </div>
+    <div class="p-writeArea">
+        <textarea id="postarea" placeholder="where are you?"></textarea>
+
+    </div>
+    <div class="p-limit">
+        <div class="number">
+            <div class="target">0</div>
+            <div class="total">/ 150</div>
+        </div>
+
+    </div>
+    <div class="p-menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa fa-map-marker"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-camera"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-smile-o"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-sun-o"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="p-share">
+        <button type="button" class="ps-btn">comment</button>
+    </div>
+</div>
+            <div class="news-message">
+                <a href="#">488 following</a>
+            </div>
+            <div class="tl-box">
+                <div class="articlebox">
+                    <div class="ab-title">
+                        <div class="userIcon">
+                            <img class="im" src="me.jpg" height="1024" width="768" alt="user image">
+                        </div>
+                        <div class="userName"><p class="ten">Nichkhun</p></div>
+                        <div class="postLocation"><p class="dc">Bangkok,ThaiLand</p></div>
+                        <div class="postTypeATime">
+                            <i class="type fa fa-camera"></i>
+                            <p class="time">12m ago</p>
+                        </div>
+                    </div>
+                    <div class="ab-content">
+                        <div class="ab-imageBox">
+                            <img src="bk.jpeg" height="500" width="3264" alt="capital">
+                        </div>
+                    </div>
+                    <div class="ab-menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>Like<span class="count">0</span></p>
+                                    <div class="collection sorted-list" id="like"></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Favorite<span class="count">0</span></p>
+                                    <div class="collection sorted-list" id="favorite"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Comment<span class="count">0</span></p>
+                                    <div class="collection sorted-list" id="comment"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ab-comment">
+                        <textarea class="postComment" id="postComment1"placeholder="write something"></textarea>
+                    </div>
+
+                </div>
+            </div>
+
+        <div class="tl-box">
+            <div class="articlebox">
+                <div class="ab-title">
+                    <div class="userIcon">
+                        <img class="im" src="me.jpg" height="1024" width="768" alt="user image">
+                    </div>
+                    <div class="userName"><p class="ten">Nichkhun</p></div>
+                    <div class="postLocation"><p class="dc">Bangkok,ThaiLand</p></div>
+                    <div class="postTypeATime">
+                        <i class="type fa fa-camera"></i>
+                        <p class="time">12m ago</p>
+                    </div>
+                </div>
+                <div class="ab-content">
+                    <div class="ab-imageBox">
+                        <img src="bk.jpeg" height="500" width="3264" alt="capital">
+                    </div>
+                </div>
+                <div class="ab-menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p>Like(30)</p>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Favorite(8)</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Comment(0)</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ab-comment">
+                    <textarea class="postComment" id="postComment2"placeholder="write something"></textarea>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <div class="chat">
+
+        </div>
+
+    </div>
+    <div class="col-md-1 meet">
+        <ul>
+            <li>
+                <a href="#"><img class="hey1" src="1.png">Let's meet</a>
+            </li>
+            <li><a href="#"><img class="hey2" src="2.png">wants to meet</a></li>
+            <li><a href="#"><img class="hey3" src="3.png">viewed me</a></li>
+            <li><a href="#"><img class="hey4" src="4.png">i viewed</a></li>
+        </ul>
+    </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script>
+    var DB={
+        getData:function () {
+            if (typeof(Storage) !== "undefined") {
+                var data;
+                try{
+                    data=JSON.parse(localStorage.getItem('list'))||{};
+                } catch(error){
+                    data={};
+                } return data;
+            } else {
+                alert("Sorry! No Web Storage support..");
+                return {};
+            }
+        },
+        setData:function (data) {
+            localStorage.setItem('list',JSON.stringify(data));
+        }
+
+    };
+    var list=DB.getData();
+    $('.ten').text(List[index].Firstname+" "+List[index].Lastname);
+    $('.dc').text(List[index].Address);
+    $('#tk').text(List[index].Firstname+" "+List[index].Lastname);
+    $('.me').attr('src',List[index].Avatar);
+    $('.im').attr('src',List[index].Avatar);
+</script>
+
+</body>
+</html>

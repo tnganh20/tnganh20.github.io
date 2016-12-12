@@ -1,0 +1,430 @@
+*{
+float: left;
+    box-sizing: border-box;
+width:100%;
+
+}
+
+.breadcrumb{
+    color: aliceblue;
+    float: left;
+
+}
+.row{
+    position:fixed;
+    z-index: 1030;
+    margin-bottom: 50px;
+}
+
+
+.bc-title{
+    color: blueviolet;
+    float:left;
+}
+.bc-derective{
+    color: brown;
+}
+.logo{
+    width: 50px;
+    float: left;
+    display: block;
+    background-color: #cc6699;
+    text-align: center;
+}
+.logo-text{
+    text-align: center;
+    font-family: cursive;
+    line-height: 50px;
+    color:whitesmoke;
+}
+.message{
+    float:left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.message a{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgray;
+    margin-top: 10px;
+}
+.notification{
+    float: left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.notification a{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgray;
+    margin-top: 10px;
+}
+.personal{
+    float: left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.personal a{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgray;
+
+}
+.user{
+    float: left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.me{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 50px;
+    border: 1px solid grey;
+}
+.mw-content{
+
+    height: auto;
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+
+}
+.menu{
+    position: relative;
+    background-color:whitesmoke;
+    display: block;
+
+
+}
+.item{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.menu .item .menu-i{
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    background-color:whitesmoke;
+}
+.content{
+    left: 200px;
+    width:100%;
+    position: absolute;
+    height: 100px;
+    float: right;
+    display: table;
+    background-color: white;
+
+}
+.Nick{
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+}
+.timeline{
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+}
+.chat{
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+}
+.poster{
+
+    height: 100px;
+    display: block;
+    padding: 10px;
+    border: 1px solid #d8d8d8;
+    position:relative;
+    background: whitesmoke;
+}
+.p-usericon{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+
+    display: inline-block;
+
+}
+.p-usericon img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+margin: 15% 25%;
+}
+.p-writeArea{
+    width: 60%;
+    height: 80%;
+    display: inline-block;
+    position: absolute;
+    left: 20%;
+    top:0;
+
+}
+#postarea{
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+}
+.p-limit{
+    width: 20%;
+    height: 80%;
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    top:0;
+
+}
+.p-limit .number{
+    font-size: 12px;
+    color:#d8d8d8;
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.target,.total{
+    width: 100%;
+    display: inline-block;
+}
+.p-menu{
+    width: 60%;
+    height: 30%;
+    display: inline-block;
+    position: absolute;
+    left: 20%;
+    top:70%;
+
+}
+.p-menu ul{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.p-menu ul li{
+    width: 10px;
+    padding: 0 20px;
+    display: inline-block;
+
+}
+.p-menu ul li a{
+    color: #d8d8d8;
+    padding: 5px;
+
+}
+.p-share{
+    width: 15%;
+    height: 20%;
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    top: 70%;
+
+}
+.p-share .ps-btn{
+    display: block;
+    text-align: center;
+    background-color: #28b78b;
+
+    color: white;
+    border-radius: 5px;
+}
+.news-message{
+    width: 100%;
+    height: 50px;
+    display: table;
+
+}
+.news-message a{
+    width: 500px;
+   text-decoration: underline;
+    text-align: center;
+    line-height: 50px;
+    color:#d8d8d8;
+    font-size: 12px;
+}
+.tl-box{
+    width: 100%;
+    height: auto;
+    display: table;
+}
+.articlebox{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.articlebox .ab-title{
+
+    height: 100px;
+    display: block;
+    border: 1px solid whitesmoke;
+    background: whitesmoke;
+    margin-top:20px ;
+    position: relative;
+}
+.articlebox .userIcon{
+width: 20%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.userIcon img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 15% 25%;
+    text-align: center;
+    border-radius: 50%;
+}
+.articlebox .userName{
+width: 60%;
+    height: 50%;
+    display: block;
+    position: absolute;
+    left: 20%;
+    top:0;
+
+
+}
+.userName p{
+    font-size: 16px;
+    text-align: left;
+    margin-top: 20px;
+}
+.articlebox .postLocation{
+    width: 60%;
+    height: 50%;
+    display: block;
+    position: absolute;
+    left: 20%;
+    top:50%;
+
+}
+.postLocation p{
+    font-size: 12px;
+    text-align: left;
+    color: darkgray;
+}
+.articlebox .postTypeATime{
+width: 20%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 80%;
+top:0;
+
+}
+.postTypeATime .type{
+    text-align: right;
+    color: grey;
+    display: block;
+    padding-right: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+
+}
+.postTypeATime .time{
+    text-align: right;
+    color: grey;
+    display: block;
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.ab-content{
+width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+.ab-imageBox{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+.ab-menu{
+width: 100%;
+    height: 30px;
+    display: block;
+border:1px solid whitesmoke;
+    background-color: whitesmoke;
+}
+.ab-menu li{
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px;
+    width: 100px;
+    color: whitesmoke;
+}
+.ab-comment{
+width: 100%;
+    height: 40px;
+    display: block;
+    border:1px solid grey;
+    background-color: whitesmoke;
+
+
+}
+.ab-comment .postComment{
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+}
+.meet{
+    position: absolute;
+    display: block;
+    background-color:whitesmoke;
+}
+.meet .hey1{
+    margin-bottom: 20px;
+}
+.meet .hey2{
+    margin-bottom: 20px;
+}
+.meet .hey3{
+    margin-bottom: 20px;
+}
+.meet .hey4{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    
+}
+@media only screen and (max-width: 768px) {
+
+
+}
+@media only screen and (max-width: 480px) {
+
+
+}
