@@ -1,0 +1,94 @@
+
+*{
+
+    box-sizing: border-box;
+    width:100%;
+
+}
+
+.breadcrumb{
+    color: aliceblue;
+
+
+}
+.row1{
+    margin-bottom: 50px;
+}
+
+
+.bc-title{
+    color: blueviolet;
+    float:left;
+}
+.bc-derective{
+    color: brown;
+}
+.logo{
+    width: 50px;
+    float: left;
+    display: block;
+    background-color: #cc6699;
+    text-align: center;
+}
+.logo-text{
+    text-align: center;
+    font-family: cursive;
+    line-height: 50px;
+    color:whitesmoke;
+}
+.message{
+    float:left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.message a{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgray;
+    margin-top: 10px;
+}
+.notification{
+    float: left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.notification a{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgray;
+    margin-top: 10px;
+}
+.personal{
+    float: left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.personal a{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgray;
+
+}
+.user{
+    float: left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.me{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 50px;
+    border: 1px solid grey;
+}
+
+/* -- media query for user profile image -- */
+/*@media (max-width: 767px) {
+    .user-image {
+        max-height: 400px;
+    }
+}

@@ -1,0 +1,71 @@
+header{
+    background-color: #cc6699;
+}
+footer {
+    background-color: #cc6699;
+}
+footer a{
+    text-decoration: none;
+    color:black;
+    display: block;
+    font-size: 20px;
+}
+#add{
+    padding-left: 15px;
+}
+#foot{
+    float:right;
+    padding: 20px;
+}
+#login{
+    float:right;
+    padding-top: 14px;
+}
+#btn1{
+    background-color: #cc6699;
+    border: 1px solid black;
+    color: white;
+}
+#btn2{
+    background-color: white;
+    color:black;
+}
+.demo{
+    padding: 5px;
+    margin: 5px;
+    float: left;
+    width: 30%;
+}
+#regimg{
+    width: 70%;
+    height: 70%;
+}
+input{
+    border: 2px solid black;
+    padding: 8px;
+    margin: 8px;
+}
+input[type=submit] {
+    width:100px;
+}
+#forgot{
+    text-decoration: none;
+    color:black;
+    padding-left: 90px;
+}
+#register{
+    padding: 20px;
+}
+#regis{
+    float: right;
+    background-color: #cc6699;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+}
+.full{
+    width: 100%;
+}
+@media screen and (max-width: 736px) {
+
+}
