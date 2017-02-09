@@ -1,0 +1,114 @@
+*{
+
+    box-sizing: border-box;
+    width:100%;
+
+}
+
+.breadcrumb{
+    color: aliceblue;
+
+
+}
+.row1{
+    margin-bottom: 50px;
+}
+
+
+.bc-title{
+    color: blueviolet;
+    float:left;
+}
+.bc-derective{
+    color: brown;
+}
+.logo{
+    width: 50px;
+    float: left;
+    display: block;
+    background-color: #cc6699;
+    text-align: center;
+}
+.logo-text{
+    text-align: center;
+    font-family: cursive;
+    line-height: 50px;
+    color:whitesmoke;
+}
+.message{
+    float:left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.message a{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgray;
+    margin-top: 10px;
+}
+.notification{
+    float: left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.notification a{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgray;
+    margin-top: 10px;
+}
+.personal{
+    float: left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.personal a{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgray;
+
+}
+.user{
+    float: left;
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.me{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 50px;
+    border: 1px solid grey;
+}
+.list-content{
+    min-height:300px;
+}
+.list-content .list-group .title{
+    background:#5bc0de;
+    border:2px solid #DDDDDD;
+    font-weight:bold;
+    color:#FFFFFF;
+}
+.list-group-item img {
+    height:80px;
+    width:80px;
+}
+
+.jumbotron .btn {
+    padding: 5px 5px !important;
+    font-size: 12px !important;
+}
+.prj-name {
+    color:#5bc0de;
+}
+.break{
+    width:100%;
+    margin:20px;
+}
+.name {
+    color:#5bc0de;
+}

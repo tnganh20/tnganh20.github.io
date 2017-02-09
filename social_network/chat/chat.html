@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+    <title>Hi</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+
+        }
+        .breadcrumb{
+            color: aliceblue;
+            float: left;
+        }
+
+        .container{
+            margin-top: 5px;
+        }
+        .bc-title{
+            color: blueviolet;
+            float:left;
+        }
+        .bc-derective{
+            color: brown;
+        }
+        .logo{
+            float: left;
+            display:block;
+            background-color: #cc6699;
+            text-align: center;
+        }
+        .logo-text{
+            text-align: center;
+            font-family: cursive;
+            line-height: 50px;
+            color:whitesmoke;
+        }
+        .message{
+            float:left;
+            display: block;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+        .message a{
+            font-size: 18px;
+            font-weight: bold;
+            color: darkgray;
+            margin-top: 10px;
+        }
+        .notification{
+            float: left;
+            display: block;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+        .notification a{
+            font-size: 18px;
+            font-weight: bold;
+            color: darkgray;
+            margin-top: 10px;
+        }
+        .personal{
+            float: left;
+            display: block;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+        .personal a{
+            font-size: 18px;
+            font-weight: bold;
+            color: darkgray;
+
+        }
+        .user{
+            float: left;
+            display: block;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+        .me{
+            margin-left: 5px;
+            height: 30px;
+            margin-top: 10px;
+            line-height: 50px;
+            border: 1px solid grey;
+        }
+        .list-content{
+            min-height:300px;
+        }
+        .list-content .list-group .title{
+            background:#5bc0de;
+            border:2px solid #DDDDDD;
+            font-weight:bold;
+            color:#FFFFFF;
+        }
+        .list-group-item img {
+            height:80px;
+            width:80px;
+        }
+
+        .jumbotron .btn {
+            padding: 5px 5px !important;
+            font-size: 12px !important;
+        }
+        .prj-name {
+            color:#5bc0de;
+        }
+        .break{
+            width:100%;
+            margin:20px;
+        }
+        .name {
+            font-size: 14px;
+            color:#5bc0de;
+        }
+
+
+        </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script>
+        function get() {
+            document.getElementById("yourMessage").value  = localStorage.getItem("message");
+        }
+        function send(){
+            localStorage.setItem("message", document.getElementById("myMessage").value);
+        }
+        function onStorageEvent(storageEvent){
+            document.getElementById("yourMessage").value = localStorage.getItem("message");
+        }
+        window.addEventListener('storage', onStorageEvent, false);
+    </script>
+</head>
+<body>
+<div class="container-fluid" id="mw-header">
+    <div class="row1">
+    <a href="../home/home.html">
+        <div class="col-md-1 col-xs-1 logo">
+            <p class="logo-text">D</p>
+        </div>
+    </a>
+        <div class="col-md-11 col-xs-11">
+            <nav class="breadcrumb">
+                <div class="row">
+                    <div class="col-md-8 col-xs-8">
+                        <p class="bc-title">Date online</p>
+                    </div>
+                    <div class="col-md-1 col-xs-1 message">
+                        <a href="#">
+                            <i class="fa fa-comment"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-1 col-xs-1 notification">
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-1 col-xs-1 personal">
+                        <a href="#" id="tk">DuyAnh<i class="fa fa-angle-down"></i></a>
+                    </div>
+                    <div class="col-md-1 col-xs-1 user">
+                        <a href="#">
+                            <img class="me ava" src="me.jpg">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+
+    </div>
+</div>
+<div class="container bootstrap snippet">
+
+    <div class="header">
+        <h3 class="text-muted prj-name">
+            <span class="fa fa-users fa-2x principal-title"></span>
+            Đối tượng của bạn
+        </h3>
+    </div>
+
+
+    <div class="jumbotron list-content">
+        <ul class="list-group">
+            <li href="#" class="list-group-item title">
+                Mate List
+            </li>
+            <li href="#" class="list-group-item text-left">
+                <img class="img-thumbnail" src="http://i.imgur.com/iSyEh2c.jpg">
+                <label class="name">
+                    Xuân Trường<br>
+                </label>
+                <label class="pull-right">
+                    <a  class="btn btn-success btn-xs glyphicon glyphicon-ok" href="#" title="View"></a>
+
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">send</button>
+                </label>
+                <div class="break"></div>
+            </li>
+            <li href="#" class="list-group-item text-left">
+                <img class="img-thumbnail"  src="http://i.imgur.com/bcbXitH.jpg">
+                <label class="name">
+                    QTV
+                </label>
+                <label class="pull-right">
+                    <a  class="btn btn-success btn-xs glyphicon glyphicon-ok" href="#" title="View"></a>
+
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">send</button>
+                </label>
+                <div class="break"></div>
+            </li>
+            <li href="#" class="list-group-item text-left">
+                <img class="img-thumbnail"  src="http://i.imgur.com/2h1L4gr.jpg">
+                <label class="name">
+                    Thảo Hương
+                </label>
+                <label class="pull-right">
+                    <a  class="btn btn-success btn-xs glyphicon glyphicon-ok" href="#" title="View"></a>
+
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">send</button>
+                </label>
+                <div class="break"></div>
+            </li>
+            <li href="#" class="list-group-item text-left">
+                <a class="btn btn-block btn-primary">
+                    <i class="glyphicon glyphicon-refresh"></i>
+                    Load more...
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2>Message</h2>
+            </div>
+            <div class="modal-body">
+                <label for="yourMessage">Her say</label>
+                <br>
+                <input type="text" id="yourMessage" readonly size="40">
+                <br>
+                <label for="myMessage">I say</label>
+                <br>
+                <input type="text" id="myMessage" autofocus size="40">
+                <br>
+                <button type="button" onclick="send()">Send</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript">
+    $('#tk').text(List[index].Firstname+" "+List[index].Lastname);
+    $('.ava').attr('src',List[index].Avatar);
+</script>
+</body>
+</html>

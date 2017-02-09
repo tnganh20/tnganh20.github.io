@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hi</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+<h1>Bạn biết không,thế giới có hơn 7 tỷ người.Giả sử là nam 50% và nữ là 50% thì bạn cũng có đến hơn 3 tỷ người có thể là bạn đời của bạn.Vì vậy,nếu bạn đang cô độc,đừng ngần ngại đến với chúng tôi,chúng tôi sẽ giúp bạn tìm được nửa kia tâm đầu ý hợp với mình.Nhưng trước hết hãy làm 1 bài test nho nhỏ xem bạn hợp với những ai đã nhé !</h1>
+<br/>
+<br/>
+<a href="#" id="start" class="btn btn-primary btn-lg">Let's Begin</a>
+<br/>
+<div class="well jumbotron">
+    <h3 id="question"></h3>
+    <br/><br/>
+    <form id="form">
+
+    </form>
+    <br/>
+    <a href="#" id="next" class="button">Next</a><br/>
+    <div id="progressbar" class="progress-bar progress-bar-striped"></div>
+</div>
+<div id="result"></div>
+<script>
+    var allQuestions = [{
+        question: "Bạn nhóm mang trong mình nhóm máu gì?",
+        choices: ["A", "B", "AB","0"],
+
+    },
+
+        {
+            question: "Màu sắc nào bạn thích trong các màu dưới đây?",
+            choices: ["Đỏ", "Vàng", "Xanh lá","Trắng"],
+
+        },
+
+        {
+            question: "Bạn thích chó hay mèo?",
+            choices: ["Mèo", "Chó", "Tôi k thích động vật !!"],
+
+        },
+
+        {
+            question: " Mõi người nghĩ bạn là người như nào khi nhìn qua vẻ bề ngoài của bạn ? ",
+            choices: ["Lạnh lùng", "Sôi nổi", "Vui tính", "Bí ẩn"],
+
+        },
+
+        {
+            question: "Khi gặp 1 người lần đầu bạn sẽ nhìn vào đâu của họ ?",
+            choices: ["Mắt", "Ngực", "Nhìn đi chỗ khac"],
+
+        }];
+    var currentquestion = 0;
+
+
+    function setupOptions() {
+        $('#question').html(parseInt(currentquestion) + 1 + ". " + allQuestions[currentquestion].question);
+        var options = allQuestions[currentquestion].choices;
+        var formHtml = '';
+        for (var i = 0; i < options.length; i++) {
+            formHtml += '<div><input type="radio" name="option" value="' + i + '" id="option' + i + '"><label for="option' + i + '">' +
+                    allQuestions[currentquestion].choices[i] + '</label></div><br/>';
+        }
+        $('#form').html(formHtml);
+        $("#option0").prop('checked', true);
+    };
+
+
+
+    $(document).ready(function() {
+
+        $(".jumbotron").hide();
+        $('#start').click(function() {
+            $(".jumbotron").fadeIn();
+            $(this).hide();
+        });
+
+        $(function() {
+            $("#progressbar").progressbar({
+                max: allQuestions.length - 1,
+                value: 0
+            });
+        });
+
+        setupOptions();
+
+        $("#next").click(function() {
+            event.preventDefault();
+
+            currentquestion++;
+            $(function() {
+                $("#progressbar").progressbar({
+                    value: currentquestion
+                });
+            });
+            if (currentquestion < allQuestions.length) {
+                setupOptions();
+                if (currentquestion == allQuestions.length - 1) {
+                    $('#next').html("Submit");
+                    $('#next').click(function() {
+                        $(".jumbotron").hide();
+                        $("#result").html("Cảm ơn bạn đã sử dụng quiz của chúng tôi,bạn muốn xem kết quả,bạn có muốn gặp những người bạn có cùng sở thích với bạn, vui lòng nhấn vào link bên dưới!"+"</br><a href='../ListMate/ListMate.html'>wants to meet</a>").hide();
+
+                        $("#result").fadeIn(1500);
+                    });
+
+                };
+
+            };
+        });
+    });
+
+</script>
+</body>
+</html>

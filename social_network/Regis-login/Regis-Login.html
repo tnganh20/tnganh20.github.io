@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Mate Your date</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header class="container-fluid">
+    <a href="#"> <img src="http://i.imgur.com/Ia5uMpC.png" height="80"></a>
+    <div id="login">
+        <div id="text">
+            <input type="text" name="username" id="username" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="Password" onkeydown="checkkeycode(event)">
+            <input type="submit" name="login" id="btn1" value="Đăng nhập" onclick="checklogin()">
+        </div>
+        <br>
+        <div id="add">
+            <input type="radio" name="keeplogin" id="keeplogin" value="Keep me login"> <label for="keeplogin">Keep me Login</label>
+            <a href="#" id="forgot">Forgot your password?</a>
+        </div>
+    </div>
+</header>
+<section class="container-fluid" id="register">
+    <div class="row">
+    <div id="img" class="col-lg-8">
+        <h3>Hot Users</h3>
+        <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 demo">
+            <a href="#"> <img src="http://i.imgur.com/Lke0R0G.jpg" height="200" width="200">
+            <h4>Vũ Phương Anh</h4>
+            <h4>Lượt thích:23.723</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 demo">
+            <a href="#"><img src="http://i.imgur.com/2h1L4gr.jpg" height="200" width="200">
+            <h4>Thảo Hương</h4>
+            <h4>Lượt thích:42.000</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 demo">
+            <a href="#"><img src="http://i.imgur.com/EPC0lAo.jpg" height="200" width="200">
+            <h4>Trần Thị Kim Ngân</h4>
+            <h4>Lượt thích:31.907</h4>
+            </a>
+        </div>
+        </div>
+        </br>
+        <div class="row">
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 demo">
+            <a href="#"><img src="http://i.imgur.com/bcbXitH.jpg" height="200" width="200">
+            <h4>Nguyễn Trần Tường Vũ</h4>
+            <h4>Lượt thích:327.152</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 demo">
+            <a href="#"><img src="http://i.imgur.com/iSyEh2c.jpg" height="200" width="200">
+            <h4>Lương Xuân Trường</h4>
+            <h4>Lượt thích:113.000</h4>
+            </a>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 demo">
+            <a href="#"><img src="http://i.imgur.com/vxLnAek.jpg" height="200" width="200">
+            <h4>Hoàng Văn Khoa</h4>
+            <h4>Lượt thích:63.148</h4>
+            </a>
+        </div>
+        </div>
+    </div>
+    <div id="regis" class="col-lg-4 col-md-12 col-xs-12 col-sm-12">
+        <h3>Đăng ký!</h3>
+        <input type="text" name="firstname" placeholder="First Name"id="firstname" class="full">
+        <br>
+        <input type="text" name="lastname" placeholder="Last Name"id="lastname" class="full">
+        <br>
+        <input type="text" name="email" placeholder="Email"id="email" class="full">
+        <br>
+        <input type="text" name="Re-email" placeholder="Re-enter Email" id="Re-email" class="full">
+        <br>
+        <input type="password" name="passwordregis" placeholder="Password" id="passwordregis" class="full">
+        <br>
+        <input type="password" name="re-password" placeholder="Re-enter Password" id="re-password" class="full">
+        <br>
+        <input type="radio" name="gender" id="male" value="Male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female"><label for="female">Female</label>
+        <br>
+        <input type="submit" name="register" id="btn2" value="Đăng ký" onclick="register()">
+    </div>
+    </div>
+</section>
+<footer class="container-fluid">
+    <img src="http://i.imgur.com/Ia5uMpC.png">
+    <div id="foot">
+    <a href="#">Contact us</a>
+    <a href="#">Term of privacy</a>
+    <a href="#">Privacy Policy</a>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
